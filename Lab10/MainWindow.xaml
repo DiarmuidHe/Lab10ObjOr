@@ -6,5 +6,23 @@
         xmlns:local="clr-namespace:Lab10"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <CheckBox x:Name="cbxCurrentAcc" Content="Current Accounts" HorizontalAlignment="Left" Margin="90,61,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxSavingsAcc" Content="Saving Accounts" HorizontalAlignment="Left" Margin="213,61,0,0" VerticalAlignment="Top"/>
+        <Label Content="Accont Details" HorizontalAlignment="Left" Margin="528,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="535,141,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkFirstName" HorizontalAlignment="Left" Margin="622,146,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Intrest Date" HorizontalAlignment="Left" Margin="535,312,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkInsertData" HorizontalAlignment="Left" Margin="622,317,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Balance" HorizontalAlignment="Left" Margin="535,273,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance1" HorizontalAlignment="Left" Margin="622,278,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Account Type" HorizontalAlignment="Left" Margin="535,229,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccoutType" HorizontalAlignment="Left" Margin="622,234,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Balance" HorizontalAlignment="Left" Margin="535,196,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance" HorizontalAlignment="Left" Margin="622,204,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="535,170,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkLastName" HorizontalAlignment="Left" Margin="622,175,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Transaction Amount" HorizontalAlignment="Left" Margin="535,350,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxTransactionAmount" HorizontalAlignment="Left" Margin="656,354,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
 </Window>
