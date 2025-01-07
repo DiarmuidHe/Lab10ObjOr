@@ -8,17 +8,24 @@ namespace Lab10
 {
     internal class CurrentAccount: Account 
     {
-        double InterestRate
+        decimal InterestRate
         {
             get
             {
-                return 0.03;
+                return 0.03m;
             }
 
         }
         public override void CalculateIntrest()
         {
-            throw new NotImplementedException();
+            decimal interest; 
+            DateTime allowedDate = DateTime.Now.AddYears(-1);
+            if(InteresstDate <= allowedDate)
+            {
+                interest = Balance * InterestRate;
+                Balance = Balance + interest;
+                InteresstDate = DateTime.Now;
+            }
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Lab10
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string AccountNumber { get; set; }
         public decimal Balance { get; set; }
         public DateTime InteresstDate { get; set; }
         private void Deposit()
@@ -21,5 +22,10 @@ namespace Lab10
 
         }
         public abstract void CalculateIntrest();
+
+        public override string ToString()
+        {
+            return $"{AccountNumber} - {LastName}, {FirstName}";
+        }
     }
 }
